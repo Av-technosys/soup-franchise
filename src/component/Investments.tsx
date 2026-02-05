@@ -12,7 +12,7 @@ const sections = [
     fee: "₹3,00,000 + GST",
     investment: "Starts At ₹18 Lakhs",
     payback: "18 To 24 Months",
-    image: "/investments1.jpg",
+    image: "/image1.jpeg",
   },
   {
     title: "Express",
