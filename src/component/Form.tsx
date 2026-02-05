@@ -44,7 +44,7 @@ const [other, setOther] = useState(false);
         Franchise Enquiry Form
       </h2>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="text-black space-y-4">
 
         <div className="grid md:grid-cols-2 gap-4">
           <input name="fullName" placeholder="Full Name *" required className="input"/>

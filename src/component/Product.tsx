@@ -28,7 +28,7 @@ const Product = () => {
   )
 
   return (
-    <section className="py-10 bg-transparent">
+    <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-3">
 
         <h2 className="text-3xl text-green-800 md:text-4xl font-bold text-center mb-6">

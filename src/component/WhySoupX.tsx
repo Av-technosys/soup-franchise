@@ -26,20 +26,17 @@ const WhySoupX = () => {
 
   return (
     <section className="bg-gray-50 py-12 px-4">
-      {/* Heading */}
       <div className="text-green-800 text-center py-3 mb-12 max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-semibold">Why SoupX</h2>
       </div>
 
-      {/* Slider */}
       <div className="overflow-hidden max-w-7xl mx-auto" ref={emblaRef}>
-  <div className="flex -ml-6">
-    {items.map((item, i) => (
-      <div
-        key={i}
-        className="pl-6 min-w-[70%] sm:min-w-[40%] md:min-w-[30%] lg:min-w-[20%]"
-      >
-
+        <div className="flex -ml-6">
+          {items.map((item, i) => (
+            <div
+              key={i}
+              className="pl-6 min-w-[70%] sm:min-w-[40%] md:min-w-[30%] lg:min-w-[20%]"
+            >
               <div className="flex flex-col items-center">
                 <div className="relative w-full h-52 border border-gray-300 bg-white">
                   <Image
@@ -50,8 +47,8 @@ const WhySoupX = () => {
                   />
                 </div>
 
-                <div className="bg-gray-200 text-center w-full py-3 mt-2">
-                  <p className="font-medium text-sm md:text-base px-2">
+                <div className="bg-green-700 text-center w-full py-3 mt-2">
+                  <p className="font-medium text-sm md:text-base px-2 text-white">
                     {item.title}
                   </p>
                 </div>
