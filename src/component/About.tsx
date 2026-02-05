@@ -22,8 +22,10 @@ const About = () => {
   )
 
   return (
-    <section className="w-full py-16">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <section className="w-full py-8 lg:py-16">
+
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
         
         {/* LEFT CONTENT */}
         <div>
@@ -69,7 +71,8 @@ const About = () => {
                       alt="SoupX Brand"
                       width={1000}
                       height={600}
-                      className="w-full h-[400px] object-contain"
+                     className="w-full h-[260px] lg:h-[400px] object-contain"
+
                       priority={index === 0}
                     />
                   </div>

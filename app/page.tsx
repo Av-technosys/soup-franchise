@@ -1,4 +1,5 @@
 import About from '@/src/component/About'
+import Banner from '@/src/component/Banner'
 import Cards from '@/src/component/Cards'
 import Footer from '@/src/component/Footer'
 import Form from '@/src/component/Form'
@@ -11,6 +12,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
+    <Banner/>
     <Home/>
     <Product/>
     <About/>

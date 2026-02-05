@@ -25,7 +25,7 @@ const WhySoupX = () => {
   );
 
   return (
-    <section className="bg-gray-100 py-12 px-4">
+    <section className="bg-gray-50 py-12 px-4">
       {/* Heading */}
       <div className="text-green-800 text-center py-3 mb-12 max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-semibold">Why SoupX</h2>
