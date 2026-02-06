@@ -6,6 +6,7 @@ import {
   FaGlobe,
   FaFacebookF,
   FaInstagram,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -17,15 +18,16 @@ const Footer = () => {
         {/* LEFT */}
         <div className="flex flex-col gap-3 text-xl text-gray-800">
 
-          <a href="tel:02241484110" className="flex items-center gap-2 hover:text-green-700">
-            <FaPhoneAlt className="text-green-600" />
-            <span>(+91) 9996668387</span>
-          </a>
+         <div className="flex items-center gap-2">
+  <FaPhoneAlt className="text-green-600" />
+  <span>(+91) 9996668387</span>
+</div>
 
-          <a href="mailto:info@franchise-ready.in" className="flex items-center gap-2 hover:text-green-700">
-            <FaEnvelope className="text-green-600" />
-            <span>contact@soupx.co.in</span>
-          </a>
+<div className="flex items-center gap-2">
+  <FaEnvelope className="text-green-600" />
+  <span>contact@soupx.co.in</span>
+</div>
+
 
           <a href="http://soupx.health/" target="_blank" className="flex items-center gap-2 hover:text-green-700">
             <FaGlobe className="text-green-600" />
@@ -51,7 +53,7 @@ const Footer = () => {
         <div className="flex items-center gap-4">
 
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/soupxindia/"
             target="_blank"
             className="w-10 h-10 bg-blue-600 flex items-center justify-center text-white text-xl rounded-full transition transform hover:scale-110"
           >
@@ -59,11 +61,18 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/soupxindia/"
             target="_blank"
             className="w-10 h-10 bg-pink-600 flex items-center justify-center text-white text-xl rounded-full transition transform hover:scale-110"
           >
             <FaInstagram />
+          </a>
+           <a
+            href="https://www.linkedin.com/company/soupx-sip-of-health/?originalSubdomain=in"
+            target="_blank"
+            className="w-10 h-10 bg-blue-600 flex items-center justify-center text-white text-xl rounded-full transition transform hover:scale-110"
+          >
+            <FaLinkedin className="text-white" />
           </a>
 
         </div>

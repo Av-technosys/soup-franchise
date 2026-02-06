@@ -11,12 +11,10 @@ import {
 } from "@/components/ui/carousel"
 
 const images = [
-  "/product1.jpg",
-  "/product2.jpg",
-  "/product3.jpg",
-  "/product4.jpg",
-  "/product5.jpg",
-  "/product6.jpg",
+
+  "/product7.jpeg",
+  "/product8.jpeg",
+  "/product9.jpeg",
  
   "/product10.png",
   "/product11.png",
@@ -53,6 +51,7 @@ const Product = () => {
               >
                 <div className="relative w-full h-[140px] sm:h-[170px] md:h-[200px] rounded-full overflow-hidden border-2 border-green-600 shadow-xl">
                   <Image
+                    
                     src={src}
                     alt={`product-${index}`}
                     fill
