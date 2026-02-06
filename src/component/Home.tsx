@@ -25,10 +25,10 @@ const Home = () => {
             scalable franchise model. Join us in revolutionizing India’s dining
             culture while building a profitable, purpose-driven venture.
           </p>
-
+            <a href="#enquire">
           <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-semibold shadow-md transition">
             Enquire Now
-          </button>
+          </button></a>
         </div>
 
         {/* RIGHT IMAGE */}
