@@ -21,6 +21,7 @@ const [other, setOther] = useState(false);
       experience: fd.get("experience"),
       reason: fd.get("reason"),
       time: fd.get("time"),
+      score: fd.get("score"),
       other: fd.get("other"),
     };
 
@@ -117,6 +118,13 @@ const [other, setOther] = useState(false);
           <label className="mr-4"><input type="radio" name="time" value="Immediately"/> Immediately</label>
           <label className="mr-4"><input type="radio" name="time" value="3-6 Months"/> 3 - 6 Months</label>
           <label><input type="radio" name="time" value="6+ Months"/> 6+ Months</label>
+        </div>
+
+         <div>
+          <p className="font-medium mb-2">Do you have a good credit profile (CIBIL score)? *</p>
+          <label className="mr-4"><input type="radio" name="score" value="700+"/> 700+</label>
+          <label className="mr-4"><input type="radio" name="score" value="Below 700"/> Below 700</label>
+          <label><input type="radio" name="score" value=" Not sure"/> Not sure</label>
         </div>
 
         <textarea name="other" placeholder="Any Other Info" className="input h-20"/>

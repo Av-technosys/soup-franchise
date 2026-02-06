@@ -28,6 +28,7 @@ export async function POST(req) {
         <p><b>Experience:</b> ${data.experience}</p>
         <p><b>Reason:</b> ${data.reason}</p>
         <p><b>Investment Time:</b> ${data.time}</p>
+         <p><b>Credit Profile:</b> ${data.score}</p>
         <p><b>Other Info:</b> ${data.other}</p>
 
         <hr/>
