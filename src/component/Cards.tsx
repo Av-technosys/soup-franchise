@@ -4,7 +4,7 @@ import { Shield, Target, Rocket } from "lucide-react";
 const data = [
   {
     title: "The Problem",
-    text: "Hospitals see massive footfall daily — doctors, staff, patients, attendants. But food options? Coffee, burgers, junk food. Exactly what they shouldn’t be eating.",
+    text: "Hospitals experience massive daily footfall — doctors, staff, patients, and attendants working through long and demanding hours. Yet, the available food options are often limited to coffee, fried snacks, and fast food.",
     icon: Shield,
   },
   {
@@ -14,7 +14,7 @@ const data = [
   },
   {
     title: "The Next Step",
-    text: "We are planning pilots at Accord, Asian & Sarvodaya Hospitals, where initial feedback shows strong demand for healthy meals.",
+    text: "We are planning to expand rapidly with the launch of 50+ SoupX outlets across Delhi NCR by December, making healthy and hygienic food more accessible to people in their everyday routines.",
     icon: Rocket,
   },
 ];
