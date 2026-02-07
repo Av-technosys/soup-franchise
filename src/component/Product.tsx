@@ -11,6 +11,14 @@ import {
 } from "@/components/ui/carousel"
 
 const images = [
+"/product1.png",
+  "/product2.png",
+  "/product3.jpeg",
+  "/product4.png",
+  "/product5.png",
+   "/product6.png",
+  "/product7.png",
+  "/product8.png",
 
   "/product7.jpeg",
   "/product8.jpeg",

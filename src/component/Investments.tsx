@@ -9,23 +9,29 @@ import Link from "next/link";
 const sections = [
   {
     title: "Kiosk",
-    fee: "₹3,00,000 + GST",
-    investment: "Starts At ₹18 Lakhs",
-    payback: "18 To 24 Months",
+    fee: "₹5–10 Lakhs",
+    investment: "₹16–17 Lakhs",
+    working: "₹5–6 Lakhs",
+    payback: "18–24 Months",
+    tenure: "7 Years",
     image: "/image1.jpeg",
   },
   {
     title: "Express",
-    fee: "₹5,00,000 + GST",
-    investment: "Starts At ₹22 Lakhs",
-    payback: "18 To 24 Months",
+    fee: "₹7 Lakhs + GST",
+    investment: "₹22–23 Lakhs",
+    working: "One-time Investment",
+    payback: "18–24 Months",
+    tenure: "7 Years",
     image: "/investments2.jpg",
   },
   {
     title: "Cafe",
-    fee: "₹7,00,000 + GST",
-    investment: "Starts At ₹30 Lakhs",
-    payback: "18 To 24 Months",
+    fee: "₹8 Lakhs",
+    investment: "₹30–35 Lakhs",
+    working: "One-time Investment",
+    payback: "18–24 Months",
+    tenure: "7 Years",
     image: "/investments3.jpg",
   },
 ];
@@ -36,8 +42,7 @@ const Investments = () => {
   }, []);
 
   return (
-<div className="bg-gray-50 py-8 md:py-12 space-y-10 md:space-y-16">
-
+    <div className="bg-gray-50 py-8 md:py-12 space-y-10 md:space-y-16">
 
       {/* Heading */}
       <div className="text-center" data-aos="fade-up">
@@ -70,14 +75,23 @@ const Investments = () => {
               </div>
 
               <div className="bg-gray-200 text-black py-2 rounded w-full">
+                Working Capital - {section.working}
+              </div>
+
+              <div className="bg-gray-200 text-black py-2 rounded w-full">
                 Payback - {section.payback}
               </div>
-            <a href="#enquire">
-              <button className="w-full border border-white py-3 px-3 rounded-xl font-medium hover:bg-white hover:text-green-800 transition">
-                Enquire Now
-              </button>
-            </a>
-              
+
+              <div className="bg-gray-200 text-black py-2 rounded w-full">
+                Tenure - {section.tenure}
+              </div>
+
+              <a href="#enquire">
+                <button className="w-full border border-white py-3 px-3 rounded-xl font-medium hover:bg-white hover:text-green-800 transition">
+                  Enquire Now
+                </button>
+              </a>
+
             </div>
           </div>
 
@@ -85,7 +99,6 @@ const Investments = () => {
           <div
             data-aos={index % 2 === 1 ? "fade-up-right" : "fade-up-left"}
             className="relative w-full h-[260px] md:h-[380px] rounded-xl overflow-hidden"
-
           >
             <Image
               src={section.image}

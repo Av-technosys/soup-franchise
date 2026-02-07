@@ -32,14 +32,20 @@ const Home = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative w-full h-[420px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg">
-          <Image
-            src="/image2.jpg"   // 👉 yaha apni image daal
-            alt="SoupX Franchise"
-            fill
-            className="object-cover"
-          />
-        </div>
+      {/* RIGHT IMAGE */}
+<div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg group">
+  <Image
+    src="/image2.png"
+    alt="SoupX Franchise"
+    fill
+    className="object-cover transition-transform duration-500 group-hover:scale-105"
+    priority
+  />
+</div>
+
+
+
+
 
       </div>
     </section>

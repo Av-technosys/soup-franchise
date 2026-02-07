@@ -64,7 +64,7 @@ export default function FranchiseForm() {
         <div className="grid md:grid-cols-2 gap-4">
           <input name="fullName" placeholder="Full Name *" required className="input"/>
           <div className="flex">
-            <div className="px-4 flex items-center bg-gray-200 border border-r-0 border-gray-300 rounded-l-md">
+            <div className="px-4 flex items-center bg-gray-200 border border-r-0 border-black rounded-l-md">
               +91
             </div>
 
@@ -112,15 +112,27 @@ export default function FranchiseForm() {
           />
         )}
 
-        <div>
-          <p className="font-medium mb-2">Preferred Investment Slab *</p>
-          <label className="mr-4">
-            <input type="checkbox" name="investment" value="18-22 Lakhs"/> ₹18 - ₹22 Lakhs
-          </label>
-          <label>
-            <input type="checkbox" name="investment" value="22-30 Lakhs"/> ₹22 - ₹30 Lakhs
-          </label>
-        </div>
+      <div>
+  <p className="font-medium mb-2">Preferred Investment Slab *</p>
+
+  <div className="flex flex-wrap items-center gap-4">
+    <label className="flex items-center gap-2">
+      <input type="checkbox" name="investment" value="25-30 lakh" />
+      ₹25 - ₹30 Lakhs
+    </label>
+
+    <label className="flex items-center gap-2">
+      <input type="checkbox" name="investment" value="30-35 lakh" />
+      ₹30 - ₹35 Lakhs
+    </label>
+
+    <label className="flex items-center gap-2">
+      <input type="checkbox" name="investment" value="50 lakh +" />
+      ₹50 Lakhs +
+    </label>
+  </div>
+</div>
+
 
         <textarea name="experience" placeholder="Experience in food & beverage industry" className="input h-24"/>
         <textarea name="reason" placeholder="Why are you interested in partnering with us?" className="input h-24"/>
@@ -151,7 +163,9 @@ export default function FranchiseForm() {
           width: 100%;
           padding: 12px;
           border-radius: 8px;
-          border: 1px solid #ccc;
+          border: 1px solid black;
+          color: black;
+          background: white;
         }
       `}</style>
     </div>
