@@ -9,29 +9,29 @@ import Link from "next/link";
 const sections = [
   {
     title: "Kiosk",
-    fee: "₹5–10 Lakhs",
+    fee: "₹5–10 Lakhs + GST",
     investment: "₹16–17 Lakhs",
-    working: "₹5–6 Lakhs",
     payback: "18–24 Months",
     tenure: "7 Years",
+     working: "₹5–6 Lakhs(One-time Investment)",
     image: "/image1.jpeg",
   },
   {
     title: "Express",
     fee: "₹7 Lakhs + GST",
     investment: "₹22–23 Lakhs",
-    working: "One-time Investment",
     payback: "18–24 Months",
     tenure: "7 Years",
+     working: "One-time Investment",
     image: "/investments2.jpg",
   },
   {
     title: "Cafe",
     fee: "₹8 Lakhs",
     investment: "₹30–35 Lakhs",
-    working: "One-time Investment",
     payback: "18–24 Months",
     tenure: "7 Years",
+     working: "One-time Investment",
     image: "/investments3.jpg",
   },
 ];
@@ -74,9 +74,7 @@ const Investments = () => {
                 Investment - {section.investment}
               </div>
 
-              <div className="bg-gray-200 text-black py-2 rounded w-full">
-                Working Capital - {section.working}
-              </div>
+              
 
               <div className="bg-gray-200 text-black py-2 rounded w-full">
                 Payback - {section.payback}
@@ -84,6 +82,10 @@ const Investments = () => {
 
               <div className="bg-gray-200 text-black py-2 rounded w-full">
                 Tenure - {section.tenure}
+              </div>
+
+              <div className="bg-gray-200 text-black py-2 rounded w-full">
+                Working Capital - {section.working}
               </div>
 
               <a href="#enquire">
@@ -111,7 +113,7 @@ const Investments = () => {
       ))}
 
       {/* Download Button */}
-      <div className="text-center" data-aos="zoom-in">
+      {/* <div className="text-center" data-aos="zoom-in">
         <a
           href="https://drive.google.com/file/d/1e66_c-_WF9eKtoB7c4j8XE444oJ2hvXQ/view"
           target="_blank"
@@ -120,7 +122,7 @@ const Investments = () => {
         >
           Download Brochure
         </a>
-      </div>
+      </div> */}
 
     </div>
   );
