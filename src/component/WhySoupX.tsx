@@ -11,11 +11,14 @@ const items = [
   { title: "Proven Business Models", img: "/why3.jpg" },
   { title: "Strong Digital Presence", img: "/why4.jpg" },
   { title: "Scalable & Tech Enabled Model", img: "/why5.jpg" },
+  { title: "Trusted by Big Investors", img: "/why6.png" },
   { title: "Shark Tank India Recognized", img: "/why1.jpg" },
   { title: "FOCO Model We Manage You Earn", img: "/why2.jpg" },
   { title: "Proven Business Models", img: "/why3.jpg" },
   { title: "Strong Digital Presence", img: "/why4.jpg" },
   { title: "Scalable & Tech Enabled Model", img: "/why5.jpg" },
+   { title: "Trusted by Big Investors", img: "/why6.png" },
+  
 ];
 
 const WhySoupX = () => {
