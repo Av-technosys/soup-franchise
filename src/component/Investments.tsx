@@ -13,7 +13,8 @@ const sections = [
     investment: "₹16–17 Lakhs",
     payback: "18–24 Months",
     tenure: "7 Years",
-     working: "₹5–6 Lakhs(One-time Investment)",
+     working: "₹5–6 Lakhs",
+    pay: "One time Investment",
     image: "/image1.jpeg",
   },
   {
@@ -22,7 +23,7 @@ const sections = [
     investment: "₹22–23 Lakhs",
     payback: "18–24 Months",
     tenure: "7 Years",
-     working: "One-time Investment",
+     pay: "One-time Investment",
     image: "/investments2.jpg",
   },
   {
@@ -31,7 +32,7 @@ const sections = [
     investment: "₹30–35 Lakhs",
     payback: "18–24 Months",
     tenure: "7 Years",
-     working: "One-time Investment",
+     pay: "One-time Investment",
     image: "/investments3.jpg",
   },
 ];
@@ -84,9 +85,19 @@ const Investments = () => {
                 Tenure - {section.tenure}
               </div>
 
+             
+              
+              {section.working && (
+  <div className="bg-gray-200 text-black py-2 rounded w-full">
+     Working Capital - {section.working}
+  </div>
+)}
+
+
               <div className="bg-gray-200 text-black py-2 rounded w-full">
-                Working Capital - {section.working}
-              </div>
+   {section.pay}
+</div>
+
 
               <a href="#enquire">
                 <button className="w-full border border-white py-3 px-3 rounded-xl font-medium hover:bg-white hover:text-green-800 transition">
